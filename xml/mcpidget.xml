@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<request>
+<type>syndication_report</type>
+<params>
+<filter>
+<!-- Video Syndication Scheduled Dates 
+<begin_date>$$startDate$$</begin_date>
+<end_date>$$endDate$$</end_date>-->
+<!-- If only published videos should be reported -->
+<publish_check>yes</publish_check>
+<!-- Video Publish Dates 
+<synd_pub_ts_start>$$startDate$$</synd_pub_ts_start>
+<synd_pub_ts_end>$$endDate$$</synd_pub_ts_end>-->  
+<!-- Syndication complete dates-->
+<ts_complete_start>$$startDate$$</ts_complete_start>
+<ts_complete_end>$$endDate$$</ts_complete_end> 
+<!-- Integer: source ids for the videos, 0 for all. CMS/TV DB, etc. -->
+<source_id>0</source_id>
+
+
+
+
+<!-- Video source type UGC, Upload, etc -->
+<type>all</type>
+<!-- Content type: either of three values - all, 0 for long form, 1 for clip -->
+<content_type>all</content_type>
+
+<!-- Integer: syndication status, 0:All, 1:Processing, 2:Done, 3:Not Done, 4:Error, 5:Pending
+Review, 6:QC Failed, 7:Cancelled, 8:Pending -->
+<status_synd>2</status_synd>
+<!-- List of metadata fields to be reported -->
+</filter>
+<metadata_fields>
+<field>upload_id</field>
+<field>duration</field>
+<field>program_name</field>
+<field>def_title</field>
+<field>completed_date</field>
+<field>def_description</field>
+<field>syndication_date</field>
+</metadata_fields>
+
+
+</params>
+</request>

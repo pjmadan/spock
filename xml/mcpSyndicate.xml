@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<request>
+  <type>exec_synd</type>
+  <params>
+    <syndication>
+      <upload_id>$$uploadId$$</upload_id>
+      <syndicator_id>$$syndicatorId$$</syndicator_id>
+      <schedule_date/>
+    </syndication>
+  </params>
+</request>
